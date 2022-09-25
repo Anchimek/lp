@@ -2,7 +2,7 @@ const header = document.querySelector('header')
 const main = document.querySelector('main')
 const burger = document.querySelector('.burger')
 const menu = document.querySelector('.menu')
-const close = document.querySelector('.close-circle')
+const closeCrc = document.querySelector('.close-circle')
 
 main.addEventListener('scroll', () => {
     if (main.scrollTop > 100) {
@@ -16,7 +16,7 @@ burger.addEventListener('click', () => {
     menu.classList.toggle('active')
 })
 
-close.addEventListener('click', () => {
+closeCrc.addEventListener('click', () => {
     menu.classList.toggle('active')
 })
 

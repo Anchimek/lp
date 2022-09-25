@@ -42,6 +42,10 @@ main {
   text-decoration: none;
 }
 
+.menu svg {
+  margin-top: -100px;
+}
+
 .menu.active {
   visibility: visible;
   opacity: 1;
@@ -109,7 +113,6 @@ main {
   height: 50px;
   background-color: var(--gray);
   border-radius: 50%;
-  z-index: 1000;
   cursor: pointer;
 }
 
@@ -136,6 +139,7 @@ main {
 .menu nav {
   position: absolute;
   width: 100%;
+  z-index: 1000;
 }
 
 .menu nav ul.nav {
