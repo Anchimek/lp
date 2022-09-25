@@ -10,7 +10,7 @@ main {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: var(--black);
+    background-color: var(--brown);
     width: 100%;
     height: 100vh;
     opacity: 0;
@@ -61,7 +61,7 @@ main {
                 position: relative;
                 width: 14px;
                 height: .1px;
-                background-color: var(--black);
+                background-color: var(--brown);
                 z-index: 1000;
                 transform: rotate(-45deg);
             }
