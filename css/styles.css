@@ -13,7 +13,7 @@ body {
   text-shadow: var(--shadow);
   position: relative;
   overflow-x: hidden;
-  line-height: 1.5;
+  line-height: 1.7;
   color: var(--gray);
 }
 
@@ -246,14 +246,13 @@ span.gold {
 
 .first-section .text h2 {
   text-shadow: var(--shadow);
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 500;
   color: var(--gray);
   margin: 0 1em;
   padding: 0;
   text-align: center;
   font-weight: 400;
-  padding: 0 0 .25em 0;
 }
 
 .first-section .text h2.first {
@@ -353,6 +352,8 @@ span.gold {
 .third-section--content ul {
   text-align: left;
   margin-bottom: 2.5em;
+  margin-top: 0;
+  padding-top: 0;
   font-weight: 400;
 }
 
@@ -757,10 +758,10 @@ h2,
 h3 {
   font-family: 'Playfair Display', serif;
   font-weight: 500;
-  font-size: 2rem;
+  font-size: 1.8rem;
+  line-height: 1.5;
   color: var(--gray);
-  margin: 0 0 1em 0;
-  padding: 0 0 .5em 0;
+  margin: 0 0 .5em 0;
   border-bottom: 1px solid var(--golden);
 }
 
@@ -843,7 +844,7 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 5rem 1.5em 0 1.5em;
+  margin: 1rem 1.5em 0 1.5em;
   font-size: .7rem;
   text-align: center;
   border-top: 1px solid var(--golden);
@@ -962,7 +963,7 @@ footer .info {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 0;
-  padding: 1em;
+  padding: 1em 0 0 0;
   font-size: .7rem;
   text-align: left;
   color: var(--golden);

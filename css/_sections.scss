@@ -155,14 +155,13 @@ span.gold {
         margin-top: 9rem;
         h2 {
             text-shadow: var(--shadow);
-            font-size: 2rem;
+            font-size: 1.8rem;
             font-weight: 500;
             color: var(--gray);
             margin: 0 1em;
             padding: 0;
             text-align: center;
             font-weight: 400;
-            padding: 0 0 .25em 0;
             &.first {
                 border-bottom: 1px solid var(--golden);
             }
@@ -235,6 +234,8 @@ span.gold {
         ul {
             text-align: left;
             margin-bottom: 2.5em;
+            margin-top: 0;
+            padding-top: 0;
             font-weight: 400;
         }
         .featured-header {
