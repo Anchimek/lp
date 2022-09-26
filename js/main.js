@@ -3,6 +3,7 @@ const main = document.querySelector('main')
 const burger = document.querySelector('.burger')
 const menu = document.querySelector('.menu')
 const closeCrc = document.querySelector('.close-circle')
+const navAhref = document.querySelectorAll('a')
 
 main.addEventListener('scroll', () => {
     if (main.scrollTop > 100) {
@@ -20,6 +21,6 @@ closeCrc.addEventListener('click', () => {
     menu.classList.toggle('active')
 })
 
-menu.addEventListener('click', () => {
+navAhref.forEach((a) => a.addEventListener('click', () => {
     menu.classList.toggle('active')
-})
+}))
