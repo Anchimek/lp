@@ -11,7 +11,6 @@
     grid-gap: 8rem;
     margin: 3rem 0;
     .item {
-        background-color: aliceblue;
         width: 250px;
         height: 300px;
         img {
@@ -31,14 +30,50 @@
             display: flex;
             justify-content: space-between;
             margin: 0;
-            padding-bottom: 1em;
+            padding: 1em;
             font-size: .7rem;
             text-align: left;
             color: var(--golden);
             border-bottom: 1px solid var(--golden);
             span {
                 color: var(--gray);
+                font-weight: 300;
             }
+        }
+    }
+}
+
+@media all and (min-width: 768px) {
+    .offer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        p {
+            padding: 0 3rem;
+        }
+        .items {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+    }
+}
+
+@media all and (min-width: 1024px) {
+    .offer {
+        .items {
+            grid-gap: 10rem 2rem;
+            padding: 0 .5rem;
+        }
+    }
+}
+
+@media all and (min-width: 1440px) {
+    .offer {
+        .items {
+            grid-gap: 10rem 4rem;
+            padding: 0 2rem;
         }
     }
 }

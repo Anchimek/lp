@@ -3,14 +3,17 @@ footer {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 0 1.5em;
+    margin: 5rem 1.5em 0 1.5em;
     font-size: .7rem;
     text-align: center;
+    border-top: 1px solid var(--golden);
+    font-weight: 300;
     .info {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        grid-gap: .15rem;
     }
 }
 
@@ -21,7 +24,7 @@ footer {
         .info {
             flex-direction: row;
             flex-wrap: wrap;
-            grid-gap: 2em;
+            grid-gap: 1em;
             span {
                 width: 150px;
             }
@@ -33,7 +36,7 @@ footer {
     footer {
         font-size: .8rem;
         .info {
-            grid-gap: 3em;
+            grid-gap: 2em;
             span {
                 width: 250px;
             }
@@ -43,7 +46,6 @@ footer {
 
 @media all and (min-width: 1440px) {
     footer {
-        font-size: .9rem;
         .info {
             grid-gap: 4em;
             span {

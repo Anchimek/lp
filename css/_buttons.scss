@@ -1,6 +1,7 @@
 a.btn,
 a.golden,
-button {
+button,
+.featured-btn {
     display: flex;
     flex: none;
     flex-direction: row;
@@ -27,4 +28,9 @@ button {
     &:hover {
         color: var(--golden);
     }
+}
+
+.featured-btn {
+    max-width: 250px;
+    max-height: 60px;
 }

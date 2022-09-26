@@ -3,7 +3,7 @@ const main = document.querySelector('main')
 const burger = document.querySelector('.burger')
 const menu = document.querySelector('.menu')
 const closeCrc = document.querySelector('.close-circle')
-const navAhref = document.querySelectorAll('a')
+const navAhref = document.querySelectorAll('.nav-item')
 
 main.addEventListener('scroll', () => {
     if (main.scrollTop > 100) {
