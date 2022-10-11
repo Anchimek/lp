@@ -1,0 +1,121 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 1em 2.5em;
+    
+    z-index: 1000;
+    grid-area: header;
+    height: 5rem;
+    transition: all .5s ease;
+    background: rgba(194, 160, 80, .8) ;
+    .logo {
+        z-index: 1000;
+        img {
+            width: 150px;
+            height: auto;
+        }
+    }
+    .burger {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        background-color: var(--gray);
+        border-radius: 50%;
+        z-index: 1000;
+        &--bar {
+            display: block;
+            position: relative;
+            width: 15px;
+            height: .1px;
+            background-color: var(--brown);
+            z-index: 1000;
+            &::after,
+            &::before {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 4px;
+                height: 100%;
+                width: 100%;
+                background-color: var(--brown);
+                transition: all .15s forwards;
+                z-index: 1000;
+            }
+            &::before {
+                top: -4px;
+            }
+        }
+        &:hover {
+            cursor: pointer;
+            .burger--bar {
+                background-color: var(--golden);
+                &::after,
+                &::before {
+                    background-color: var(--golden);
+                    top: 5px;
+                    transition: all .15s forwards;
+                }
+                &::before {
+                    top: -5px;
+                }
+            }
+        }
+    }
+    p.header-p {
+        display: none;
+        color: var(--gray);
+    }
+}
+
+@media all and (min-width: 1024px) {
+    .header {
+        padding: 0 5em;
+        p.header-p {
+            display: block;
+        }
+        &.active {
+            height: 4rem;
+        }
+    }
+}
+
+@media all and (min-width: 1700px) {
+    .header {
+        padding: 4em 7em;
+        &.active {
+            padding: 3.5em 6em;
+        }
+        p.header-p {
+            display: block;
+            font-size: 1.25rem;
+        }
+        .logo img {
+            width: 250px;
+            height: auto;
+        }
+        .burger {
+            width: 80px;
+            height: 80px;
+            &--bar {
+                width: 25px;
+                height: .5px;
+                &::after,
+                &::before {
+                    top: 7px;
+                }
+                &::before {
+                    top: -7px;
+                }
+            }
+        }
+    }
+    
+}
